@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="AssignMessage.ErrorContent.BadRequest">
+    <AssignVariable>
+        <Name>flow.shop.error.statusCode</Name>
+        <Value>400</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.error</Name>
+        <Value>bad_request</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.message</Name>
+        <Value>Bad request</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.code</Name>
+        <Value>400.01.001</Value>
+    </AssignVariable>
+</AssignMessage>

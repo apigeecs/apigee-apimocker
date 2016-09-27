@@ -1,0 +1,9 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "Mock",
+  "main": "app.js",
+  "dependencies": {
+    "apimocker": "^0.4.13"
+  }
+}

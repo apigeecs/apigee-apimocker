@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="true" name="ExtractVariables.Movies">
+   <Source>request</Source>
+   <VariablePrefix>flow.shop.movies</VariablePrefix>
+   <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+   <URIPath>
+      <Pattern ignoreCase="false">/movies/{imdbId}</Pattern>
+   </URIPath>
+</ExtractVariables>

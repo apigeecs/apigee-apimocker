@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations continueOnError="true" name="KeyValueMapOperations.Get.MoviesTarget.Basepath" mapIdentifier="movies">
+    <Scope>environment</Scope>
+    <Get assignTo="movies.targetBasepath">
+        <Key>
+           <Parameter>targetBasepath</Parameter>
+        </Key>
+    </Get>
+</KeyValueMapOperations>

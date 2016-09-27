@@ -1,0 +1,10 @@
+{
+  "name": "shop-integration-tests",
+  "description": "Shop integration tests",
+  "version": "1.0.0",
+  "devDependencies": {
+    "apickli": "^1.7.0",
+    "cucumber": "^1.2.1",
+    "prettyjson": "^1.1.3"
+  }
+}

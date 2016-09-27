@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="movies">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>LookupCache.MoviesTarget.Basepath</Name>
+            </Step>
+            <Step>
+                <Name>KeyValueMapOperations.Get.MoviesTarget.Basepath</Name>
+                <Condition>lookupcache.LookupCache.MoviesTarget.Basepath.cachehit != "true"</Condition>
+            </Step>
+            <Step>
+                <Name>PopulateCache.MoviesTarget.Basepath</Name>
+                <Condition>lookupcache.LookupCache.MoviesTarget.Basepath.cachehit != "true"</Condition>
+            </Step>
+        </Request>
+    </PreFlow>
+    <Flows>
+        <Flow name="Movies">
+            <Request>
+                <Step>
+                    <Name>AssignMessage.Movies</Name>
+                </Step>
+            </Request>
+            <Condition>request.verb = "GET" AND proxy.pathsuffix MatchesPath "/movies/*"</Condition>
+        </Flow>
+    </Flows>
+    <HTTPTargetConnection>
+        <LoadBalancer>
+            <Server name="movies"/>
+        </LoadBalancer>
+        <Path>{movies.targetBasepath}</Path>
+    </HTTPTargetConnection>
+</TargetEndpoint>

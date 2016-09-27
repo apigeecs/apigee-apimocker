@@ -1,0 +1,18 @@
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseFault.Json">
+	<FaultResponse>
+		<Set>
+			<Headers>
+				<Header name="Content-Type">application/json</Header>
+			</Headers>
+			<Payload contentType="application/json" variablePrefix="@" variableSuffix="#">
+				{
+					"code": "@flow.shop.error.code#",
+					"message": "@flow.shop.error.message#",
+					"error": "@flow.shop.error.error#"
+				}
+			</Payload>
+			<StatusCode>{flow.shop.error.statusCode}</StatusCode>
+		</Set>
+	</FaultResponse>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

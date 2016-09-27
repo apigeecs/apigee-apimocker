@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="AssignMessage.ErrorContent.ServerError">
+    <AssignVariable>
+        <Name>flow.shop.error.statusCode</Name>
+        <Value>500</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.error</Name>
+        <Value>internal_server_error</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.message</Name>
+        <Value>Internal server error</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.code</Name>
+        <Value>500.01.001</Value>
+    </AssignVariable>
+</AssignMessage>

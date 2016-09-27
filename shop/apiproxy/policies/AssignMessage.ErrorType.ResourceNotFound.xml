@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="AssignMessage.ErrorType.ResourceNotFound">
+    <AssignVariable>
+        <Name>flow.shop.error.type</Name>
+        <Value>resource_not_found</Value>
+    </AssignVariable>
+</AssignMessage>

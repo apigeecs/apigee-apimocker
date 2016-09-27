@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="AssignMessage.ErrorContent.ResourceNotFound">
+    <AssignVariable>
+        <Name>flow.shop.error.statusCode</Name>
+        <Value>404</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.error</Name>
+        <Value>resource_not_found</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.message</Name>
+        <Value>Resource not found</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.shop.error.code</Name>
+        <Value>404.01.001</Value>
+    </AssignVariable>
+</AssignMessage>

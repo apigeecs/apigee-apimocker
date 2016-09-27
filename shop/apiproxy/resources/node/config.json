@@ -1,0 +1,21 @@
+{
+    "mockDirectory": "./mock",
+    "quiet": false,
+    "port": "8080",
+    "latency": 50,
+    "logRequestHeaders": false,
+    "webServices": {
+        "": {
+            "latency": 20,
+            "verbs": ["get"],
+            "switch": ["i"],
+            "responses": {
+                "get": {"httpStatus": 200, "mockFile": "error.json"}
+            },
+            "switchResponses": {
+                "itt2294629": {"httpStatus": 200, "mockFile": "frozen.json"},
+                "itt0120338": {"httpStatus": 200, "mockFile": "titanic.json"}
+            }
+        }
+    }
+}

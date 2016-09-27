@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <FaultRules>
+        <FaultRule name="Bad Request">
+            <Step>
+                <Name>AssignMessage.ErrorContent.BadRequest</Name>
+            </Step>
+            <Condition>flow.shop.error.type = "bad_request"</Condition>
+        </FaultRule>
+        <FaultRule name="Resource Not Found">
+            <Step>
+                <Name>AssignMessage.ErrorContent.ResourceNotFound</Name>
+            </Step>
+            <Condition>flow.shop.error.type = "resource_not_found"</Condition>
+        </FaultRule>
+    </FaultRules>
+    <DefaultFaultRule>
+        <AlwaysEnforce>true</AlwaysEnforce>
+        <Step>
+            <Name>AssignMessage.ErrorContent.ServerError</Name>
+            <Condition>flow.shop.error.code = NULL</Condition>
+        </Step>
+        <Step>
+            <Name>RaiseFault.Json</Name>
+        </Step>
+    </DefaultFaultRule>
+    <Flows>
+        <Flow name="Movies">
+            <Request>
+                <Step>
+                    <Name>ExtractVariables.Movies</Name>
+                </Step>
+                <Step>
+                    <Name>AssignMessage.ErrorType.BadRequest</Name>
+                    <Condition>flow.shop.movies.imdbId = NULL OR !flow.shop.movies.imdbId JavaRegex "tt(\d+)"</Condition>
+                </Step>
+                <Step>
+                    <Name>RaiseFault.GoToFaultRules</Name>
+                    <Condition>flow.shop.error.type != NULL</Condition>
+                </Step>
+            </Request>
+            <Condition>request.verb = "GET" AND proxy.pathsuffix MatchesPath "/movies/*"</Condition>
+        </Flow>
+        <Flow name="Resource Not Found">
+            <Request>
+                <Step>
+                    <Name>AssignMessage.ErrorType.ResourceNotFound</Name>
+                </Step>
+                <Step>
+                    <Name>RaiseFault.GoToFaultRules</Name>
+                    <Condition>flow.shop.error.type != NULL</Condition>
+                </Step>
+            </Request>
+        </Flow>
+    </Flows>
+    <Description>default</Description>
+    <RouteRule name="Movies">
+        <TargetEndpoint>movies</TargetEndpoint>
+        <Condition>proxy.pathsuffix MatchesPath "/movies/*"</Condition>
+    </RouteRule>
+    <HTTPProxyConnection>
+        <BasePath>/v1/shop</BasePath>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+</ProxyEndpoint>

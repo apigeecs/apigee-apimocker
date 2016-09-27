@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache continueOnError="false" name="LookupCache.MoviesTarget.Basepath">
+    <CacheKey>
+        <Prefix>target</Prefix>
+        <KeyFragment>basepath</KeyFragment>
+    </CacheKey>
+    <CacheResource>movies</CacheResource>
+    <Scope>Global</Scope>
+    <AssignTo>movies.targetBasepath</AssignTo>
+</LookupCache>

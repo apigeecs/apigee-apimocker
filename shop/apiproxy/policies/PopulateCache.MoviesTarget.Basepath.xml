@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PopulateCache continueOnError="false" name="PopulateCache.MoviesTarget.Basepath">
+    <CacheKey>
+        <Prefix>target</Prefix>
+        <KeyFragment>basepath</KeyFragment>
+    </CacheKey>
+    <CacheResource>movies</CacheResource>
+    <Scope>Global</Scope>
+    <Source>movies.targetBasepath</Source>
+</PopulateCache>
