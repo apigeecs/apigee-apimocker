@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Mock",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "apimocker": "^0.4.13"
   }
