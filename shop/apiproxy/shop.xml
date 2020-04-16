@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy name="shop-v1">
+<APIProxy revision="2" name="shop">
+    <Basepaths>/v1/shop</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1587070013935</CreatedAt>
+    <CreatedBy>joeywong@google.com</CreatedBy>
     <Description>Shop (v1)</Description>
+    <DisplayName>shop</DisplayName>
+    <LastModifiedAt>1587070013935</LastModifiedAt>
+    <LastModifiedBy>joeywong@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:d9ff9fc83245fe58c21611561b39d65d5d7000f75aa1008c930caa0326bb2633d7e23afda9b83e05a6b55879c9905f17a218c6a88723dfe5a598ad99d6b229af</ManifestVersion>
+    <Policies>
+        <Policy>AssignMessage.ErrorContent.BadRequest</Policy>
+        <Policy>AssignMessage.ErrorContent.ResourceNotFound</Policy>
+        <Policy>AssignMessage.ErrorContent.ServerError</Policy>
+        <Policy>AssignMessage.ErrorType.BadRequest</Policy>
+        <Policy>AssignMessage.ErrorType.ResourceNotFound</Policy>
+        <Policy>AssignMessage.Movies</Policy>
+        <Policy>ExtractVariables.Movies</Policy>
+        <Policy>KeyValueMapOperations.Get.MoviesTarget.Basepath</Policy>
+        <Policy>LookupCache.MoviesTarget.Basepath</Policy>
+        <Policy>PopulateCache.MoviesTarget.Basepath</Policy>
+        <Policy>RaiseFault.GoToFaultRules</Policy>
+        <Policy>RaiseFault.Json</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>movies</TargetEndpoint>
+    </TargetEndpoints>
 </APIProxy>
