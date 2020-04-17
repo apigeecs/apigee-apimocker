@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AssignMessage.ErrorContent.BadRequest" version="SHA-512:196fa4180e0e3dce3666d911e38a8203ec8b3a8fad00517dad00f3b31ec4cee37c46cc0d8d605765019a2ccd450601857427b8f5aae032814088ce5be6fcb7e0"/>
+        <VersionInfo resourceName="AssignMessage.ErrorContent.ResourceNotFound" version="SHA-512:45ad6dc0c42c02a99596a5e7467fe77d7e24f74151c87cd2f0e91f4088ca763a8bcdc4e621005946f61d4494fe02288ca3e0c8d64e3dbd3d53859e96b8a762e8"/>
+        <VersionInfo resourceName="AssignMessage.ErrorContent.ServerError" version="SHA-512:bd90dba1cc9d2a7f82ac2f3527c9f13a234287eec084981610392037850df729eaf5dc3a9065013f535692bf5d27342d70562bbaa74700c821a95a1f4c7c471d"/>
+        <VersionInfo resourceName="AssignMessage.ErrorType.BadRequest" version="SHA-512:0f9800fa3e3b3fe22c77a3470f4a010d4049b9971d09687b9cf08ca8cebfadb7f0492a919348495eb622e43e35692003bec220f0994784e800a87ffd7a24513b"/>
+        <VersionInfo resourceName="AssignMessage.ErrorType.ResourceNotFound" version="SHA-512:4793b23fbcc3cdf1e4b045f02691cd3ef430a6e1f415b41bfd7ade4044f0259aa5be9bf684bed1ac64644c4bcab3467c627ba90d60efbae2a65640169761e375"/>
+        <VersionInfo resourceName="AssignMessage.Movies" version="SHA-512:456a2e7bb17ba5ed4457c17d6ddd7ac3d8d6b4d7a63ee438870fa7ac0d42bbf5c402216f98d97144816827b99e41d07d90171e1e8f325dc9f103d8ab1dd1114b"/>
+        <VersionInfo resourceName="ExtractVariables.Movies" version="SHA-512:c01e74c1d8626a2860fd9753759437d9faba1516120b60259840e5771d8d1c7e9629df57cd1ab03a60cd808dbbcf410fb740de041b6c97f3cb73c30bc7712d31"/>
+        <VersionInfo resourceName="KeyValueMapOperations.Get.MoviesTarget.Basepath" version="SHA-512:cc3f6fde508c0f1ae9467ff98ffd9744d86b373fbc485a0c8a6f30a14147e8dff1a40a8924c14cfb9af2db820117287864e0bec9910f36ae4cfb22b620490947"/>
+        <VersionInfo resourceName="LookupCache.MoviesTarget.Basepath" version="SHA-512:beba3874a85d4d76695899613969c2b5dd9d6a71164882088072423cde038b48ee711038ab11ca495d9dc72b0037457f39c5488a3d92c363a9a735774242ed02"/>
+        <VersionInfo resourceName="PopulateCache.MoviesTarget.Basepath" version="SHA-512:e9ab0253099b1bb8b996700481fb50b5bb4c0c4b6f67e99b32df2ba87c8a4ed1d271b174b4bb7d7d05f630f9c55c4bdebaf6dca101e1ffb98a98b93b023b597c"/>
+        <VersionInfo resourceName="RaiseFault.GoToFaultRules" version="SHA-512:ce44813a7d46388e0a7c50377cb43f7834aa3a6b5d062a1e514956915993aa3c79d18f187bf8934d6cf700dbf06161b6f28b8ac88d7a848be6abcb0a04739e2d"/>
+        <VersionInfo resourceName="RaiseFault.Json" version="SHA-512:b855d6d23bd3410a7d48017bd1f00fda1ae967afc1ef08672b85bccf222171981e255f585c3c4ff3fa63e0d07ce3b2de8a47d5e5cd4c1a0798e3415495247e75"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:c838ab42af924417fabfb40341b72378e07bc336c284357cddb7a6ab4ee7ea1f5c0e2117dd3ccac047f1a943bffca6ae1135d0feed52f5c8951b38c3edca007a"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="movies" version="SHA-512:ad420674fa213661c7f806a56c518102c7a8c250c9e9fc6495a5a024ea92304416dee292c32fe6cbfe043bd1db046d55ec75de99e46d4dabfdb62f44ede6b45e"/>
+    </TargetEndpoints>
+</Manifest>

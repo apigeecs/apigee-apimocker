@@ -74,29 +74,6 @@
                         </executions>
                     </plugin>
                     <plugin>
-                        <groupId>com.cj.jshintmojo</groupId>
-                        <artifactId>jshint-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>validate-proxy-sources</id>
-                                <phase>process-sources</phase>
-                                <goals>
-                                    <goal>lint</goal>
-                                </goals>
-                                <configuration>
-                                    <directories>
-                                        <directory>apiproxy/resources/node</directory>
-                                    </directories>
-                                    <excludes>
-                                        <exclude>apiproxy/resources/node/node_modules</exclude>
-                                    </excludes>
-                                    <reporter>jslint</reporter>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
                         <artifactId>maven-resources-plugin</artifactId>
                         <version>2.6</version>
                         <executions>
@@ -126,26 +103,9 @@
                         </executions>
                     </plugin>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-assembly-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>zip-node-modules</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>single</goal>
-                                </goals>
-                                <configuration>
-                                    <descriptor>${project.root.dir}/apiproxy/resources/node/node_modules/zip.xml</descriptor>
-                                    <finalName>node_modules</finalName>
-                                    <outputDirectory>${target.root.dir}/apiproxy/resources/node</outputDirectory>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
                         <groupId>io.apigee.build-tools.enterprise4g</groupId>
                         <artifactId>apigee-edge-maven-plugin</artifactId>
+                        <version>1.1.7</version>
                         <configuration>
                             <skip>false</skip>
                         </configuration>

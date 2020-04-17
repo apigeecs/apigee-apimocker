@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies/>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:33113f9a0a76a89be17e09d685034675daf9160241ee8c856126739144491e0b40cc92e9d6028d46776d1e8935e441141973caf85679aeebc3a786981b32eae9"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="hosted://app.js" version="SHA-512:934e94b5eca8485f7f5622cba41a5063f94f51d03d05ab54360d52d340072cd36f8469e7387a1e941224ee5b4196d4ebf76f21d013228fe996d9b925b20ee99a"/>
+        <VersionInfo resourceName="hosted://app.yaml" version="SHA-512:1d45d91f576f9845b1fbd64bac13b1591da466b268eabb413190007c425cb486c43a281154babb8cd9994bd32ae5a9a1efb6b90bc73e2e7a94ad27b8fd2f5245"/>
+        <VersionInfo resourceName="hosted://config.json" version="SHA-512:2bdc7c62a5e5f4c66241851e45da7287b59eda5715256e160922f832dbe62926299251f06cc6d67fd921535505f44cbff37dd43e6c11eb9113d804001406a5b4"/>
+        <VersionInfo resourceName="hosted://mock/error.json" version="SHA-512:8e07720fd4ca74fae0f2c15b34bed744ce3d6a050e56887201ac0d341e746c5c6b858df03a33617a9a63607c5628e2b20a27bcb8eb31930014aa9e36ba9eed75"/>
+        <VersionInfo resourceName="hosted://mock/frozen.json" version="SHA-512:302d20793c9d077361c55f6c5bf023b5b7d64f3d58de42132d182a4b11ab75f6f9d86b5184465b1b196ffa104453c37e4de00f02ff394f6542ec03d09f6c833b"/>
+        <VersionInfo resourceName="hosted://mock/titanic.json" version="SHA-512:6b4ae53a4d0b12182f76cfc165948e09b3d1932f8199688d1ff679412ed6a238a019417d6f9f6c63f867cb865569efde9ed2f22249aa5cda117a39b44a9137af"/>
+        <VersionInfo resourceName="hosted://package.json" version="SHA-512:67ca73ff6386cb39220a37d3996e0eaa3fe3627eccab5abc14f81f61a2d406d7e413916f027290ca7b2884f50329137c17ffa136abbd9bf7e2796c07371786cb"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="node" version="SHA-512:ebb7c5b9ac19e94e4afb0bebaaa76c9f38328eb8bdf2dcafd50122f7804b814c5f5a3a5eb85d5f61b5832b815c6e9d14a3b24b6d233b6bfd8e5376ad4ddd84e6"/>
+    </TargetEndpoints>
+</Manifest>

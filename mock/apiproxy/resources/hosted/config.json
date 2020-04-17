@@ -1,7 +1,7 @@
 {
     "mockDirectory": "./mock",
     "quiet": false,
-    "port": "8080",
+    "port": "9000",
     "latency": 50,
     "logRequestHeaders": false,
     "webServices": {
