@@ -1,0 +1,40 @@
+{
+    "version": "1.0",
+    "envConfig": {
+      "test": {
+        "targetServers": [
+          {
+            "name": "movies",
+            "host": "REPLACE_HOSTNAME",
+            "isEnabled": true,
+            "port": 80,
+            "sSLInfo": {
+              "enabled": "false",
+              "clientAuthEnabled": "false",
+              "keyStore": "keystore_name",
+              "trustStore": "truststore_name",
+              "keyAlias": "key_alias",
+              "ignoreValidationErrors": "false"
+            }
+          }
+        ],
+        "caches": [
+          {
+            "name": "movies",
+            "description": "movies cache"
+          }
+        ],
+        "kvms": [
+          {
+            "name": "movies",
+            "entry": [
+              {
+                "name": "targetBasepath",
+                "value": "/mock"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
