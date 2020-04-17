@@ -16,6 +16,7 @@
         <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
         <apigee.apiversion>v1</apigee.apiversion>
         <apigee.options>update</apigee.options>
+        <apigee.config.options>update</apigee.config.options>
         <apigee.config.file>${target.root.dir}/edge.json</apigee.config.file>
     </properties>
     <!-- Since Maven 3.0.3, for two plugins bound to the same phase, the order 

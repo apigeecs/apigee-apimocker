@@ -125,24 +125,6 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <!-- <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-assembly-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>zip-node-modules</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>single</goal>
-                                </goals>
-                                <configuration>
-                                    <descriptor>${project.root.dir}/apiproxy/resources/hosted/node_modules/zip.xml</descriptor>
-                                    <finalName>node_modules</finalName>
-                                    <outputDirectory>${target.root.dir}/apiproxy/resources/hosted</outputDirectory>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin> -->
                     <plugin>
                         <groupId>io.apigee.build-tools.enterprise4g</groupId>
                         <artifactId>apigee-edge-maven-plugin</artifactId>
